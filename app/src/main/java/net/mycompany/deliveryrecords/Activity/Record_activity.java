@@ -82,24 +82,29 @@ public class Record_activity extends AppCompatActivity implements RecordsContrac
         btn_save.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String iname=et_item.getText().toString();
-                String name=et_name.getText().toString();
-                String location=et_location.getText().toString();
-                String ph=et_ph.getText().toString();
-                String date=et_date.getText().toString();
-                if (isUpdate){
-                    Records records=new Records(iname,name,location,ph,date,0);
-                    records.setId(id);
-                    presenter.updateRecords(records);
-                }
-                else {
-                    Records record=new Records(iname,name,location,ph,date,0);
-                    presenter.insertRecords(record);
-                }
-                Toast.makeText(Record_activity.this,"Save successful",Toast.LENGTH_SHORT).show();
-                finish();
+               onClickSave();
             }
         });
+    }
+
+
+    public void onClickSave(){
+        String iname=et_item.getText().toString();
+        String name=et_name.getText().toString();
+        String location=et_location.getText().toString();
+        String ph=et_ph.getText().toString();
+        String date=et_date.getText().toString();
+        if (isUpdate){
+            Records records=new Records(iname,name,location,ph,date,0);
+            records.setId(id);
+            presenter.updateRecords(records);
+        }
+        else {
+            Records record=new Records(iname,name,location,ph,date,0);
+            presenter.insertRecords(record);
+        }
+        Toast.makeText(Record_activity.this,"Save successful",Toast.LENGTH_SHORT).show();
+        finish();
     }
 
     @Override
