@@ -88,7 +88,7 @@ public class Checkdate_Activity extends AppCompatActivity implements CheckdateCo
 
     @Override
     public String getString() {
-        return null;
+        return "hello";
     }
 
     public void dpset(){
