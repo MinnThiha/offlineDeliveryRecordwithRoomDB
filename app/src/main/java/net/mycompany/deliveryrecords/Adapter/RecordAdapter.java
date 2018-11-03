@@ -1,6 +1,7 @@
 package net.mycompany.deliveryrecords.Adapter;
 
 import android.content.Context;
+import android.graphics.Color;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -42,7 +43,9 @@ public class RecordAdapter extends RecyclerView.Adapter<RecordAdapter.Rholder> {
         Records r=record.get(position);
         holder.tv_item.setText(r.getItemname());
         holder.tv_name.setText(r.getReceiver_name());
-        holder.tv_location.setText(r.getLocation());
+      holder.tv_name.setTextColor(Color.RED);
+
+      holder.tv_location.setText(r.getLocation());
         holder.tv_ph.setText(r.getReceiver_ph());
         holder.tv_date.setText(r.getDelivery_date());
     }
