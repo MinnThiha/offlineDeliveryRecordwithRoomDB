@@ -11,6 +11,7 @@ public interface CheckdateContract {
     interface CheckDatecontractView{
         void displaydateRecords(List<Records> date);
         Context getContext();
+        String getString();
     }
     interface CheckdatePresenter{
         void displayrecordbydateView(String date);

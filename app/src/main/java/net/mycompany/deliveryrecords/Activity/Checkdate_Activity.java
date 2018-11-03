@@ -86,6 +86,11 @@ public class Checkdate_Activity extends AppCompatActivity implements CheckdateCo
         return this;
     }
 
+    @Override
+    public String getString() {
+        return null;
+    }
+
     public void dpset(){
 
         Calendar cal=Calendar.getInstance();
