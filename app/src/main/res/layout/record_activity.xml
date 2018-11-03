@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#000"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:background="#fff"
+        android:id="@+id/et_name_ra"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="16dp"
+        android:ems="10"
+        android:hint="ပစၥည္းအမည္"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/et_rname_ra"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <EditText
+        android:background="#fff"
+        android:id="@+id/et_rname_ra"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="16dp"
+        android:ems="10"
+        android:hint="လက္ခံသူအမည္"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/et_location_ra"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_name_ra" />
+
+    <EditText
+        android:background="#fff"
+        android:id="@+id/et_location_ra"
+        android:layout_width="0dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="16dp"
+        android:ems="10"
+        android:hint="ပို႔ေဆာင္ရမည့္ေနရာ"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/et_ph_ra"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_rname_ra" />
+
+    <EditText
+        android:background="#fff"
+        android:id="@+id/et_ph_ra"
+        android:layout_width="0dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="16dp"
+        android:ems="10"
+        android:hint="လက္ခံသူဖုန္းနံပါတ္"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/et_date_ra"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_location_ra" />
+
+    <EditText
+        android:background="#fff"
+        android:id="@+id/et_date_ra"
+        android:layout_width="191dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="ပို႔ေဆာင္ရမည့္ေန႔"
+        app:layout_constraintBottom_toTopOf="@+id/btn_save_ra"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_ph_ra" />
+
+    <Button
+        android:background="#2a2ef1"
+        android:id="@+id/btn_dpick_ra"
+        android:layout_width="97dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:text="Date"
+        app:layout_constraintBottom_toBottomOf="@+id/et_date_ra"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/et_date_ra"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:background="#3dd712"
+        android:id="@+id/btn_save_ra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_date_ra" />
+</android.support.constraint.ConstraintLayout>
